@@ -10,6 +10,10 @@
 
 - Edunext: https://fu-edunext.fpt.edu.vn/
 
-- Sides/ Syllabus: https://flm.fpt.edu.vn/Login
+- Slides/ Syllabus: https://flm.fpt.edu.vn/Login
 
 - Zalo: https://zalo.me/g/ftecun462
+
+## Tools:
+- 1. IDE tool là Netbeans 13
+- 2. JDK: 8
