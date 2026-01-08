@@ -17,3 +17,7 @@
 ## Tools:
 - 1. IDE tool là Netbeans 13
 - 2. JDK: 8
+- Thứ tự cài: JDK 8 -> Apache Netbeans 13 -> StarUML
+
+## Videos:
+- https://youtu.be/ICzTKAn1Au0
