@@ -13,6 +13,11 @@ public class Ex_03 {
         int a = 8; // 1000
         System.out.println(a>>1); // 100
         a = a>>1;
-        System.out.println(a<<1);
+        System.out.println(a<<1); // 1000
+        
+        
+        Double d = 100d;
+        System.out.println(d instanceof Double);
+        //System.out.println(d instanceof Integer);
     }
 }
