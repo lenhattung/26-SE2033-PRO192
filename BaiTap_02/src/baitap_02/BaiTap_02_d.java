@@ -14,6 +14,7 @@ public class BaiTap_02_d {
         // a,b,c -> nhap tu ban phim (double)
         
         double x1 = -0.56789112124;
+      
         System.out.format("%.2f", x1);
     }
 }
