@@ -18,7 +18,7 @@ public class Student {
     }
 
     // constructor with parameters
-    public Student(String id, String fullName, int yearOfBrith, double gpa) {
+    public Student(String id, String fullName, int yearOfBirth, double gpa) {
 //        this.id = id;
 //        this.fullName = fullName;
 //        this.yearOfBirth = yearOfBrith;

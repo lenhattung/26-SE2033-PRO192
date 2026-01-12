@@ -44,9 +44,21 @@ public class Tester {
 //            System.out.print("Gpa: ");
 //            sts[i].setGpa(Double.parseDouble(sc.nextLine()));
 //        }
+//        
+//        for (Student st : sts) {
+//            System.out.println(st);
+//        }
+        // In header
+        System.out.printf("%-10s %-25s %-15s %-10s %-10s%n", "ID", "Full Name", "Year of Birth", "GPA", "Passed");
 
+        // In data
         for (Student st : sts) {
-            System.out.println(st);
+            System.out.printf("%-10s %-25s %-15d %-10.2f %-10s%n",
+                    st.getId(),
+                    st.getFullName(),
+                    st.getYearOfBirth(),
+                    st.getGpa(),
+                    st.checkPass() ? "Yes" : "No");
         }
     }
 
