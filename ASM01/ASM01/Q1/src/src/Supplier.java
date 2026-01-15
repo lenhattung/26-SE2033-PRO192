@@ -38,7 +38,7 @@ public class Supplier {
     }
 
     public String getName() {
-        return name;
+        return toTitleCase(name);
     }
 
     public void setName(String name) {
@@ -52,7 +52,7 @@ public class Supplier {
     }
 
     public String getAddress() {
-        return address;
+        return  toTitleCase(address);
     }
 
     public void setAddress(String address) {
@@ -89,7 +89,26 @@ public class Supplier {
 
     @Override
     public String toString() {
-        return "Supplier{" + "id=" + id + ", name=" + name + ", address=" + address + ", phone=" + phone + ", status=" + status + '}';
+        return String.format("%s,%s,%s,%s,%s", getId(), getName(), getAddress(), getPhone(), (status?"Available":"Unavailable"));
     }
-
+    
+    public String toTitleCase(String text){
+        if (text == null || text.isEmpty()){
+            return "";
+        }
+        
+        // \\s+
+        String[] words = text.trim().split("\\s+");
+        String titleCase = "";
+        
+        for (String word : words) {
+            if (word.length()>0){
+                String newWord = word.substring(0, 1).toUpperCase() 
+                        + word.substring(1).toLowerCase();
+                titleCase+= (newWord+" ");
+            }
+        }
+        // Loại bỏ khoảng trắng cuối cùng và trả về
+        return titleCase.trim();
+    }
 }
