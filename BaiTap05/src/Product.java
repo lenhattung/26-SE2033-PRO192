@@ -52,7 +52,7 @@ public class Product {
     public void setPrice(double price) {
         this.price = price;
     }
-@Override
+    @Override
     public String toString() {
         return String.format("%s, %s, %s, %s", getCode(), getName(), getMake(), getPrice());
     }
