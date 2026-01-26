@@ -52,10 +52,12 @@ public class Student {
         return "Student{" + "id=" + id + ", name=" + name + ", gpa=" + gpa + '}';
     }
 
-    public void input() {
+    public void input(boolean update) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Input Id: ");
-        this.id = sc.nextLine();
+        if (!update) {
+            System.out.print("Input Id: ");
+            this.id = sc.nextLine();
+        }
         System.out.print("Input Name: ");
         this.name = sc.nextLine();
         System.out.print("Input GPA: ");
